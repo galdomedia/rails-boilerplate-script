@@ -1,8 +1,9 @@
 #!/bin/bash
 # Rails Boilerplate Script
 # author: nathan verni
+# changed by: maciej litwiniuk
 # instructions:  drop into the root of a new rails project and run 'sh rails-boilerplate.sh;rm rails boilerplate.sh'
-
+# requirement: aasm (http://github.com/rubyist/aasm/tree/master)
 
 
 
@@ -10,7 +11,9 @@
 
 #restful-authentication
 ./script/plugin install git://github.com/technoweenie/restful-authentication.git
-./script/generate authenticated user sessions
+mv vendor/plugins/restful-authentication vendor/plugins/restful_authentication
+
+./script/generate authenticated user sessions --include-activation --aasm
  
 #jRails
 ./script/plugin install git://github.com/aaronchi/jrails.git

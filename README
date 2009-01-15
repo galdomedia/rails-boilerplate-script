@@ -1,6 +1,8 @@
 WHAT IT DOES
 Installs restful-authentication, jQuery/jRails, shoulda.  creates a default controller and route.
 
+This fork includes account activation and states for accounts
+
 
 HOW TO USE IT
 just run it in the root of a new rails app

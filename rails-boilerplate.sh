@@ -18,10 +18,12 @@ mv vendor/plugins/restful-authentication vendor/plugins/restful_authentication
 #jRails
 ./script/plugin install git://github.com/aaronchi/jrails.git
  
+#install paperclip, thanks thoughbot :D 
+script/plugin install git://github.com/thoughtbot/paperclip.git
+ 
 #install shoulda, thanks thoughtbot
 script/plugin install git://github.com/thoughtbot/shoulda.git
- 
- 
+
 #uncomment for rspecrspec
 #cd vendor/plugins
 #git clone git://github.com/dchelimsky/rspec.git

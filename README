@@ -1,8 +1,11 @@
 WHAT IT DOES
 Installs restful-authentication, jQuery/jRails, shoulda.  creates a default controller and route.
 
-This fork includes account activation and states for accounts
-
+This fork includes account activation and states for accounts. Also adds paperclip for attachment handling.
 
 HOW TO USE IT
 just run it in the root of a new rails app
+
+REQUIREMENTS
+aasm - MANDATORY - http://github.com/rubyist/aasm/tree/master
+rmagick - http://rmagick.rubyforge.org/

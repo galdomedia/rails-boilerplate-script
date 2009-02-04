@@ -45,9 +45,6 @@ touch public/stylesheets/reset.css
 echo "<%= yield %>" > app/views/layouts/application.html.erb
  
 #uncomment the default route
-sed -e 's/#\( map.root :controller => \"welcome\".*\)/\1/' config/routes.rb > config/routes.new;
-mv config/routes.rb config/routes.old;
-mv config/routes.new config/routes.rb;
-rm config/routes.old;
- 
+sed -e -i~ 's/#\( map.root :controller => \"welcome\".*\)/\1/' config/routes.rb
+unlink config/routes.rb~
  
